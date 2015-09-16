@@ -102,12 +102,16 @@
 .CodeMirror-matchingbracket, .CodeMirror-matchingtag {
     /* Ensure visibility against gray inline editor background */
     background-color: @color-bg; //Color de fondo del elemento seleccionado
-    text-shadow: 0 0 0.6em fade(@color-fgl, 40%), 0 0 0.6em fade(@color-fgl, 40%), 0 0 0.6em fade(@color-fgl, 40%), 0 0 0.1em @color-bg; 
+    
+    &.cm-tag {
+        text-shadow: 0 0 0.6em fade(@color-fgl, 40%), 0 0 0.6em fade(@color-fgl, 40%), 0 0 0.6em fade(@color-fgl, 40%), 0 0 0.1em @color-bg; 
+    }
 }
 
 .CodeMirror-matchingbracket, .CodeMirror-matchingtag .CodeMirror-scroll {
-    background-color: @color-bg; //Color de fondo de los corchetes seleccionados
-    color: @color-fgl !important; //Color del corchete seleccionado
+    text-shadow: 0 0 0.6em fade(@color-fgl, 40%), 0 0 0.6em fade(@color-fgl, 40%), 0 0 0.6em fade(@color-fgl, 40%), 0 0 0.1em @color-bg;
+    background-color: @color-bg; 
+    color: @color-fgl !important;
 }
 
 .CodeMirror-overwrite .CodeMirror-cursor {

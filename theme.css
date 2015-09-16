@@ -123,10 +123,14 @@
 .CodeMirror-matchingtag {
   /* Ensure visibility against gray inline editor background */
   background-color: #242429;
+}
+.CodeMirror-matchingbracket.cm-tag,
+.CodeMirror-matchingtag.cm-tag {
   text-shadow: 0 0 0.6em rgba(242, 239, 239, 0.4), 0 0 0.6em rgba(242, 239, 239, 0.4), 0 0 0.6em rgba(242, 239, 239, 0.4), 0 0 0.1em #242429;
 }
 .CodeMirror-matchingbracket,
 .CodeMirror-matchingtag .CodeMirror-scroll {
+  text-shadow: 0 0 0.6em rgba(242, 239, 239, 0.4), 0 0 0.6em rgba(242, 239, 239, 0.4), 0 0 0.6em rgba(242, 239, 239, 0.4), 0 0 0.1em #242429;
   background-color: #242429;
   color: #f2efef !important;
 }
